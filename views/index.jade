@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div.signup-wrapper
+    div.content
+      div.title
+        h1 #{title}
+      div.signup-form
+        div.input-area
+          div
+            span.subtitle 帐 号:
+            input.signup-textbox(type="text", name="username")
+          div
+            span.subtitle 密 码:
+            input.signup-textbox(type="password", name="password")
+        div.signup-buttons
+           input#login-button(type="button", name="login-button", value="登录")
+           input#signup-button(type="button", name="signup-button", value="注册")
+
